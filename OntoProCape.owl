@@ -1,0 +1,646 @@
+Prefix: : <http://www.semanticweb.org/m.winter/ontologies/2025/3/untitled-ontology-85/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://css.iat.rwth-aachen.de/OntoProCap>
+<http://css.iat.rwth-aachen.de/OntoProCap/0.0.1>
+
+Annotations: 
+    rdfs:comment "The ontology is licensed under the Creative Commons CC BY-SA 4.0 (Attribution-ShareAlike 4.0 International) license. This means that you can freely use, distribute, edit, and build upon the ontology as long as you give proper credit to the creator of the ontology and publish your derivations under the same license.
+
+Creator: Michael Winter, Indah Putri
+
+E-Mail: {m.winter, i.putri}@iat.rwth-aachen.de"@en
+
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: rdfs:label
+
+    
+AnnotationProperty: rdfs:seeAlso
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: xsd:anyURI
+
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Abrasion>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Absorption>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Adsorption>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Agitating>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#MixingOfLiquids>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#BoilingDown>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Briquetting>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
+
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Centrifugation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Circulating>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#MixingOfLiquids>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Compacting>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#ConcentrationByEvaporation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Condensation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfGases>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Desublimation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Conveying>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TransportCapability>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Dosing>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfGases>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfGases>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfGases>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfLiquids>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfLiquids>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfLiquids>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfSolids>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfSolids>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfSolids>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Cutting>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#CyclonicSeparation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Desublimation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfGases>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Condensation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#DiffusionSeparation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Dissolution>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Distillation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Dosing>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TransportCapability>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Conveying>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#ElectricalGasCleaning>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Electrodialysis>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#ElectromagneticCrushing>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Electrophoresis>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Emulsification>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#EnthalpyChange>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Extraction>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Flashing>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#FoamFormation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#FoamFractionation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Fusion>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#GasCentrifugation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#GasFiltration>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Grinding>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfGases>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfGases>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfGases>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfLiquids>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfLiquids>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfLiquids>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfSolids>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfSolids>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfSolids>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#HoldingTemperature>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#StorageCapability>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Humidification>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#HydrocyclonicSeparation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#ImpingementSeparation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Impregnation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Kneading>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Leaching>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#LiquidFiltration>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#MechanicalCrushing>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Melting>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfSolids>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Sublimation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Mixing>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#MixingOfLiquids>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Mixing>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#MixingOfSolids>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Mixing>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#MixingofGases>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Mixing>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChange>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#EnthalpyChange>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfGases>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChange>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfLiquids>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChange>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfSolids>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChange>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#PressureChange>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#EnthalpyChange>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#PressureChangeOfGas>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PressureChange>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PressureChangeOfLiquid>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#PressureChangeOfLiquid>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PressureChange>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PressureChangeOfGas>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Process>
+
+    Annotations: 
+        rdfs:comment "351-42-33, process, <in control technology>: \"complete set of interacting operations in a system by which matter, energy or information is transformed, transported or stored\""@en,
+        rdfs:label "Process"@en,
+        rdfs:label "Prozess"@de,
+        rdfs:seeAlso "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=351-42-33"^^xsd:anyURI
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#QuenchGranulation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Rectification>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Scrubbing>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Shredding>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Sintering>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Solidification>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfLiquids>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Vaporization>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#SonicGasCleaning>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Splitting>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Spraying>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Stirring>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#MixingOfLiquids>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#StorageCapability>
+
+    Annotations: 
+        rdfs:comment "Capability to store materials, energy or information."@en,
+        rdfs:comment "Fähigkeit, Stoffe, Energie oder Informationen zu speichern."@de
+    
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Storing>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#StorageCapability>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Sublimation>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfSolids>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Melting>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Suspending>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Tabletting>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChange>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#EnthalpyChange>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfGases>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChange>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfLiquids>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChange>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfSolids>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChange>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#ThermalCrushing>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
+
+    Annotations: 
+        rdfs:comment "Capability to change the properties of a material, energy or information flow (e.g. temperature, chemical composition, position)."@en,
+        rdfs:comment "Fähigkeit, Eigenschaften eines Stoff-, Energie- oder Informationsstroms zu ändern (z.B. Temperatur, chemische Zusammensetzung, Position)."@de
+    
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#TransportCapability>
+
+    Annotations: 
+        rdfs:comment "Capability to transport substances, energy or information."@en,
+        rdfs:comment "Fähigkeit, Stoffe, Energie oder Informationen zu transportieren."@de
+    
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Vaporization>
+
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfLiquids>
+    
+    DisjointWith: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Solidification>
+    
+    
+DisjointClasses: 
+    <http://css.iat.rwth-aachen.de/OntoProCap#Abrasion>,<http://css.iat.rwth-aachen.de/OntoProCap#Cutting>,<http://css.iat.rwth-aachen.de/OntoProCap#ElectromagneticCrushing>,<http://css.iat.rwth-aachen.de/OntoProCap#Grinding>,<http://css.iat.rwth-aachen.de/OntoProCap#MechanicalCrushing>,<http://css.iat.rwth-aachen.de/OntoProCap#QuenchGranulation>,<http://css.iat.rwth-aachen.de/OntoProCap#Shredding>,<http://css.iat.rwth-aachen.de/OntoProCap#Splitting>,<http://css.iat.rwth-aachen.de/OntoProCap#Spraying>,<http://css.iat.rwth-aachen.de/OntoProCap#ThermalCrushing>
+
+DisjointClasses: 
+    <http://css.iat.rwth-aachen.de/OntoProCap#Absorption>,<http://css.iat.rwth-aachen.de/OntoProCap#Adsorption>,<http://css.iat.rwth-aachen.de/OntoProCap#BoilingDown>,<http://css.iat.rwth-aachen.de/OntoProCap#Centrifugation>,<http://css.iat.rwth-aachen.de/OntoProCap#ConcentrationByEvaporation>,<http://css.iat.rwth-aachen.de/OntoProCap#CyclonicSeparation>,<http://css.iat.rwth-aachen.de/OntoProCap#DiffusionSeparation>,<http://css.iat.rwth-aachen.de/OntoProCap#Distillation>,<http://css.iat.rwth-aachen.de/OntoProCap#ElectricalGasCleaning>,<http://css.iat.rwth-aachen.de/OntoProCap#Electrodialysis>,<http://css.iat.rwth-aachen.de/OntoProCap#Electrophoresis>,<http://css.iat.rwth-aachen.de/OntoProCap#Extraction>,<http://css.iat.rwth-aachen.de/OntoProCap#Flashing>,<http://css.iat.rwth-aachen.de/OntoProCap#FoamFractionation>,<http://css.iat.rwth-aachen.de/OntoProCap#GasCentrifugation>,<http://css.iat.rwth-aachen.de/OntoProCap#GasFiltration>,<http://css.iat.rwth-aachen.de/OntoProCap#HydrocyclonicSeparation>,<http://css.iat.rwth-aachen.de/OntoProCap#ImpingementSeparation>,<http://css.iat.rwth-aachen.de/OntoProCap#Leaching>,<http://css.iat.rwth-aachen.de/OntoProCap#LiquidFiltration>,<http://css.iat.rwth-aachen.de/OntoProCap#Rectification>,<http://css.iat.rwth-aachen.de/OntoProCap#Scrubbing>,<http://css.iat.rwth-aachen.de/OntoProCap#SonicGasCleaning>
+
+DisjointClasses: 
+    <http://css.iat.rwth-aachen.de/OntoProCap#Briquetting>,<http://css.iat.rwth-aachen.de/OntoProCap#Compacting>,<http://css.iat.rwth-aachen.de/OntoProCap#Dissolution>,<http://css.iat.rwth-aachen.de/OntoProCap#Emulsification>,<http://css.iat.rwth-aachen.de/OntoProCap#FoamFormation>,<http://css.iat.rwth-aachen.de/OntoProCap#Fusion>,<http://css.iat.rwth-aachen.de/OntoProCap#Humidification>,<http://css.iat.rwth-aachen.de/OntoProCap#Impregnation>,<http://css.iat.rwth-aachen.de/OntoProCap#Kneading>,<http://css.iat.rwth-aachen.de/OntoProCap#Mixing>,<http://css.iat.rwth-aachen.de/OntoProCap#Sintering>,<http://css.iat.rwth-aachen.de/OntoProCap#Suspending>,<http://css.iat.rwth-aachen.de/OntoProCap#Tabletting>
+
+DisjointClasses: 
+    <http://css.iat.rwth-aachen.de/OntoProCap#Combination>,<http://css.iat.rwth-aachen.de/OntoProCap#EnthalpyChange>,<http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>,<http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+
+DisjointClasses: 
+    <http://css.iat.rwth-aachen.de/OntoProCap#MixingOfLiquids>,<http://css.iat.rwth-aachen.de/OntoProCap#MixingOfSolids>,<http://css.iat.rwth-aachen.de/OntoProCap#MixingofGases>
+
+DisjointClasses: 
+    <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChange>,<http://css.iat.rwth-aachen.de/OntoProCap#PressureChange>,<http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChange>
+
+DisjointClasses: 
+    <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfGases>,<http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfLiquids>,<http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfSolids>
+
+DisjointClasses: 
+    <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfGases>,<http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfLiquids>,<http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfSolids>
+
