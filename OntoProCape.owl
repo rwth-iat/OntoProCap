@@ -13,7 +13,7 @@ Ontology: <http://css.iat.rwth-aachen.de/OntoProCap>
 Annotations: 
     rdfs:comment "The ontology is licensed under the Creative Commons CC BY-SA 4.0 (Attribution-ShareAlike 4.0 International) license. This means that you can freely use, distribute, edit, and build upon the ontology as long as you give proper credit to the creator of the ontology and publish your derivations under the same license.
 
-Creator: Michael Winter, Indah Putri
+Creator: Michael Winter, Indah Radityo Putri
 
 E-Mail: {m.winter, i.putri}@iat.rwth-aachen.de"@en
 
@@ -34,18 +34,27 @@ Datatype: xsd:anyURI
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Abrasion>
 
+    Annotations: 
+        rdfs:comment "Granulation of a solid by frictional action using an abrading medium."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Absorption>
 
+    Annotations: 
+        rdfs:comment "Absorption is the transfer of a soluble component in a gas-phase mixture into a liquid absorbent whose volatility is low under process conditions. (Perry)"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Adsorption>
 
+    Annotations: 
+        rdfs:comment "Adsorption is the selcective transfer of molecules or fine-granular particles from a fluid (gas or liquid) to the interface of the adsorbents."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
@@ -58,12 +67,19 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Agitating>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#BoilingDown>
 
+    Annotations: 
+        rdfs:comment "Boiling down refers to the separation of a solution into gaseous and solid substances by evaporating the volatile components completely."@en,
+        rdfs:comment "Might also be referred to as Drying."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Briquetting>
 
+    Annotations: 
+        rdfs:comment "The agglomeration of a fine-granular powder to coarse-granular pieces by mechanical pressure."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
@@ -73,6 +89,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Centrifugation>
 
+    Annotations: 
+        rdfs:comment "A process of separating the lighter portions of a solution, mixture, or suspension from the heavier portions by centrifugal force."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
@@ -85,24 +104,36 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Circulating>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
 
+    Annotations: 
+        rdfs:comment "A combination in terms of unit operation means to get together different process steps to achieve a particular one."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Compacting>
 
+    Annotations: 
+        rdfs:comment "The compression of a loose, voluminous powder to a more dense, closely packed powder by mechanical pressure."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#ConcentrationByEvaporation>
 
+    Annotations: 
+        rdfs:comment "In evaporization, the vapor from a boiling liquid is removed and a more concentrated solution remains. (Geankoplis: Transport processes and unit operations)"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Condensation>
 
+    Annotations: 
+        rdfs:comment "The phase transition from gas to liquid."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfGases>
     
@@ -121,6 +152,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Conveying>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfGases>
 
+    Annotations: 
+        rdfs:comment "Reducing the temperature of a gas without changing ist state of aggregation"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfGases>
     
@@ -130,6 +164,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfGases>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfLiquids>
 
+    Annotations: 
+        rdfs:comment "Reducing the temperature of a liquid without changing ist state of aggregation"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfLiquids>
     
@@ -139,6 +176,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfLiquids>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfSolids>
 
+    Annotations: 
+        rdfs:comment "Reducing the temperature of a solid."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfSolids>
     
@@ -148,18 +188,27 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#CoolingOfSolids>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Cutting>
 
+    Annotations: 
+        rdfs:comment "Fragmentation of solid material by the effect of shear forces"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#CyclonicSeparation>
 
+    Annotations: 
+        rdfs:comment "Cyclonic separation is a method of removing particles from a gas stream by means of centrifugal forces."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Desublimation>
 
+    Annotations: 
+        rdfs:comment "The phase transition from gas to solid without passing through an intermediate liquid state."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfGases>
     
@@ -169,18 +218,27 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Desublimation>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#DiffusionSeparation>
 
+    Annotations: 
+        rdfs:comment "Process to separate a gas mixture into its components by means of differences in the diffusion rates of the component molecules"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Dissolution>
 
+    Annotations: 
+        rdfs:comment "The mixing of a solid and a liquid with the formation of one new homogeneous phase (i.e. the solution)."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Distillation>
 
+    Annotations: 
+        rdfs:comment "Distillation is the seperation of the constituents of liquid mixture via partial vaporization of the mixture and separate recovery of vapor and residue. (Perry)"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
@@ -196,96 +254,155 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Dosing>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#ElectricalGasCleaning>
 
+    Annotations: 
+        rdfs:comment "The separation of dispersed particles from a gas phase by means of an electric field."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Electrodialysis>
 
+    Annotations: 
+        rdfs:comment "A process which uses an electric field and two semipermeable membranes to separate dissociated species from undissociated species in a solvent. The electric field forces the dissociated ions through the membranes, while the nonpolar species remain in the solvent."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#ElectromagneticCrushing>
 
+    Annotations: 
+        rdfs:comment "The process of crushing solid material by applying electromagnetic fields that cause internal stresses."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Electrophoresis>
 
+    Annotations: 
+        rdfs:comment "Electrophoresis is the technique of separating electrically charged particles, particularly proteins, in a solution by passing an electric current through the solution. The rate of movement of the different components depends upon their charge, so that they gradually separate into bands. [neurolab.jsc.nasa.gov/glosseh.htm]"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Emulsification>
 
+    Annotations: 
+        rdfs:comment "The formation of a mixture of two liquids, such as oil and water, in which one of the liquids is in the form of fine droplets and is dispersed in the other."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#EnthalpyChange>
 
+    Annotations: 
+        rdfs:comment "EnthalpyChange in terms of unit operation considers a conversion of energy which often result in a change of the state of aggregation."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Extraction>
 
+    Annotations: 
+        rdfs:comment "Extraction refers to both liquid-liquid extraction and leaching:
+Liquid-liquid extraction is a process for separationg components in solution by their distribution between two immiscible liquid phases. Such a process can also be simply referred to as liquid extraction or solvent extraction; however, the latter term my be confusing because it also applies to the leaching of soluble substance from a solid. (Perry's) 
+Leaching is the removal of a soluble fraction, in the form of a solution, from an insoluble, permeable solid phase with which it is associated. The separation usually involves selective dissolution. The soluble constituent may be solid or liquid (Perry's)"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Flashing>
 
+    Annotations: 
+        rdfs:comment "Flashing utilized the state of phase equilibrium between a vapor and a liquid phase and the resulting material transport if a mixture with different fugacity is existent. In terms of unit operation this is usually accomplished in a vessel."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#FoamFormation>
 
+    Annotations: 
+        rdfs:comment "The combination of a liquid and a gas phase to a foam."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#FoamFractionation>
 
+    Annotations: 
+        rdfs:comment "A method of separation in which a component of the bulk liquid is preferentially adsorbed at the liquid/vapour (L/V) interface and is removed by foaming. (IUPAC Compendium of Chemical Terminology)"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
 
+    Annotations: 
+        rdfs:comment "Fragmentation in terms of unit operation is the breakup of solid material for further processing."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Fusion>
 
+    Annotations: 
+        rdfs:comment "The merging of two or more solid components by melting."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#GasCentrifugation>
 
+    Annotations: 
+        rdfs:comment "The separation of a mixture of gases of different densities by centrifugal force."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#GasFiltration>
 
+    Annotations: 
+        rdfs:comment "Gas filtration is the separation of a gas-solids mixture by forcing the mixture through a porous barrier which retains most of the solid particulates contained in the mixture."@en
+    
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#GravitySeparation>
+
+    Annotations: 
+        rdfs:comment "A separation method based on density differences. It might include sedimentation."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Grinding>
 
+    Annotations: 
+        rdfs:comment "The process of pulverizing solid material to fine-granular particles by applying mechanical forces"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfGases>
 
+    Annotations: 
+        rdfs:comment "Increasing the temperature of a gas"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfGases>
     
@@ -295,6 +412,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfGases>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfLiquids>
 
+    Annotations: 
+        rdfs:comment "Increasing the temperature of a liquid without changing ist state of aggregation"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfLiquids>
     
@@ -304,6 +424,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfLiquids>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfSolids>
 
+    Annotations: 
+        rdfs:comment "Increasing the temperature of a solid without changing ist state of aggregation."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfSolids>
     
@@ -319,54 +442,82 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#HoldingTemperature>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Humidification>
 
+    Annotations: 
+        rdfs:comment "The mixing of a gas and the vapor of a liquid with the formation of a new homogeneous phase."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#HydrocyclonicSeparation>
 
+    Annotations: 
+        rdfs:comment "Hydrocyclonic separation is a method of removing particles from a liquid stream by means of centrifugal forces."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#ImpingementSeparation>
 
+    Annotations: 
+        rdfs:comment "Particles are separated from gas by impingement on collected bodies arrayed across the path of the gas stream.(Perry)"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Impregnation>
 
+    Annotations: 
+        rdfs:comment "The process of soaking a porous material with a liquid."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Kneading>
 
+    Annotations: 
+        rdfs:comment "The blending of solid and liquid components into a uniform mass, as by folding, pressing, and stretching."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Leaching>
 
+    Annotations: 
+        rdfs:comment "Leaching in terms of unit operation is a particular form of extraction. Usually, a solute, a insolvable carrier and a solvent are applied for solid extraction"@en,
+        rdfs:comment "Might also be used for Cementation, Precipitation, and Ionic Liquids processes"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#LiquidFiltration>
 
+    Annotations: 
+        rdfs:comment "Liquid filtration is the separation of a liquid-solids mixture by forcing the mixture through a porous barrier which retains most of the solid particulates contained in the mixture."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#MechanicalCrushing>
 
+    Annotations: 
+        rdfs:comment "The process of breaking solid material into coarse-granular pieces by applying mechanical forces"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Melting>
 
+    Annotations: 
+        rdfs:comment "The phase transition from solid to the liquid."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfSolids>
     
@@ -376,30 +527,45 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Melting>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Mixing>
 
+    Annotations: 
+        rdfs:comment "Mixing in terms of unit operations is a special type of combination which results in a mixture which is required for further processing. It is usually accomplished by means of stirrer."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#MixingOfLiquids>
 
+    Annotations: 
+        rdfs:comment "The combination of two or more liquids of different composition to a homogeneous system."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Mixing>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#MixingOfSolids>
 
+    Annotations: 
+        rdfs:comment "The blending of different solid components to a granular mixture"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Mixing>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#MixingofGases>
 
+    Annotations: 
+        rdfs:comment "The mixing of two ore more gases of different compositions."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Mixing>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChange>
 
+    Annotations: 
+        rdfs:comment "PhaseChange is a specialization of EnthalpyChange an usually it is applied for the purpose of heat exchange between spatially separated phases"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#EnthalpyChange>
     
@@ -424,6 +590,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfSolids>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#PressureChange>
 
+    Annotations: 
+        rdfs:comment "By means of a PressureChange a heat content of a particular fluid may be exchanged which may be used for heating or cooling purposes in terms of unit operations."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#EnthalpyChange>
     
@@ -457,42 +626,64 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Process>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#QuenchGranulation>
 
+    Annotations: 
+        rdfs:comment "Fragmentation of a melt by rapid solidifaction, which causes internal stresses."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Rectification>
 
+    Annotations: 
+        rdfs:comment "Rectification is the separation of the constituents of a liquid mixture by successive distillations (partial vaporizations and condensations) and is obtained via the use of an integral of differential process. (Perry)"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Scrubbing>
 
+    Annotations: 
+        rdfs:comment "The separation of dispersed particels from a gas phase by suspensing or solving the particles in a liquid phase."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
 
+    Annotations: 
+        rdfs:comment "Separation in terms of unit operation means to achieve single components of a mixture by means of physical of chemical phenomenon."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Shredding>
 
+    Annotations: 
+        rdfs:comment "The fragmentation of fibrous materials by the effect of tensile forces."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Sintering>
 
+    Annotations: 
+        rdfs:comment "The heating of a mass of fine particles below the melting point, causing agglomeration to form larger particles. 
+(www.mim.com.au/glossary.html)"@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Solidification>
 
+    Annotations: 
+        rdfs:comment "The phase transition from liquid to solid."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfLiquids>
     
@@ -502,6 +693,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Solidification>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#SonicGasCleaning>
 
+    Annotations: 
+        rdfs:comment "Separation procedure based on the coagulation of small particles suspended in a fluid medium into larger aggregates by the action of sound waves."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
@@ -514,6 +708,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Splitting>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Spraying>
 
+    Annotations: 
+        rdfs:comment "The process of dispersing liquid droplets in a gas phase."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
     
@@ -542,6 +739,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Storing>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Sublimation>
 
+    Annotations: 
+        rdfs:comment "The phase transition from solid to gas without passing through an intermediate liquid state."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfSolids>
     
@@ -551,18 +751,27 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Sublimation>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Suspending>
 
+    Annotations: 
+        rdfs:comment "The process of preparing a mixture in which fine particles are suspended in a fluid, where they are supported by buoyancy."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Tabletting>
 
+    Annotations: 
+        rdfs:comment "The process of preparing a small flat compressed cake of some powder by means of high pressure."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChange>
 
+    Annotations: 
+        rdfs:comment "TemperatureChange in terms of unit operation means to transport the heat content of one material to another and it is applied for heating or cooling purposes."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#EnthalpyChange>
     
@@ -587,6 +796,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#TemperatureChangeOfSolids>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#ThermalCrushing>
 
+    Annotations: 
+        rdfs:comment "The process of crushing solid material by applying temperature differences that cause internal stresses."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
     
@@ -613,6 +825,9 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#TransportCapability>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Vaporization>
 
+    Annotations: 
+        rdfs:comment "The phase transition from liquid to gas."@en
+    
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfLiquids>
     
