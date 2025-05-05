@@ -68,8 +68,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Agitating>
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#BoilingDown>
 
     Annotations: 
-        rdfs:comment "Boiling down refers to the separation of a solution into gaseous and solid substances by evaporating the volatile components completely."@en,
-        rdfs:comment "Might also be referred to as Drying."@en
+        rdfs:comment "Boiling down refers to the separation of a solution into gaseous and solid substances by evaporating the volatile components completely."@en
     
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
@@ -252,6 +251,15 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Dosing>
         <http://css.iat.rwth-aachen.de/OntoProCap#Conveying>
     
     
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Drying>
+
+    Annotations: 
+        rdfs:comment "Drying is the process by which volatile materials are evaporated from a material to yield a solid product. (Perry)"@en
+    
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#ElectricalGasCleaning>
 
     Annotations: 
@@ -383,7 +391,8 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#GasFiltration>
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#GravitySeparation>
 
     Annotations: 
-        rdfs:comment "A separation method based on density differences. It might include sedimentation."@en
+        rdfs:comment "Gravity separation is a method used to selectively separate desired minerals from unwanted materials based on differences in density, particle size, and movement in a specific medium."@en,
+        rdfs:seeAlso "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/gravity-separation"^^xsd:anyURI
     
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
