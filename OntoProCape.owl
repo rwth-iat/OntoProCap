@@ -319,7 +319,8 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Extraction>
     Annotations: 
         rdfs:comment "Extraction refers to both liquid-liquid extraction and leaching:
 Liquid-liquid extraction is a process for separationg components in solution by their distribution between two immiscible liquid phases. Such a process can also be simply referred to as liquid extraction or solvent extraction; however, the latter term my be confusing because it also applies to the leaching of soluble substance from a solid. (Perry's) 
-Leaching is the removal of a soluble fraction, in the form of a solution, from an insoluble, permeable solid phase with which it is associated. The separation usually involves selective dissolution. The soluble constituent may be solid or liquid (Perry's)"@en
+Leaching is the removal of a soluble fraction, in the form of a solution, from an insoluble, permeable solid phase with which it is associated. The separation usually involves selective dissolution. The soluble constituent may be solid or liquid (Perry's)"@en,
+        rdfs:comment "Might also be used for Solvent Extraction process."@en
     
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
@@ -383,16 +384,6 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#GasFiltration>
 
     Annotations: 
         rdfs:comment "Gas filtration is the separation of a gas-solids mixture by forcing the mixture through a porous barrier which retains most of the solid particulates contained in the mixture."@en
-    
-    SubClassOf: 
-        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
-    
-    
-Class: <http://css.iat.rwth-aachen.de/OntoProCap#GravitySeparation>
-
-    Annotations: 
-        rdfs:comment "Gravity separation is a method used to selectively separate desired minerals from unwanted materials based on differences in density, particle size, and movement in a specific medium."@en,
-        rdfs:seeAlso "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/gravity-separation"^^xsd:anyURI
     
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
@@ -498,7 +489,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Leaching>
 
     Annotations: 
         rdfs:comment "Leaching in terms of unit operation is a particular form of extraction. Usually, a solute, a insolvable carrier and a solvent are applied for solid extraction"@en,
-        rdfs:comment "Might also be used for Cementation, Precipitation, and Ionic Liquids processes"@en
+        rdfs:comment "Might also be used for Cementation and Precipitation processes."@en
     
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
@@ -508,6 +499,15 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#LiquidFiltration>
 
     Annotations: 
         rdfs:comment "Liquid filtration is the separation of a liquid-solids mixture by forcing the mixture through a porous barrier which retains most of the solid particulates contained in the mixture."@en
+    
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#LiquidPhasesGravitySeparation>
+
+    Annotations: 
+        rdfs:comment "Liquid phases gravity separation refers to two liquid phases settle into separate layers due to gravity. (Perry)"@en
     
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
@@ -655,6 +655,15 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Scrubbing>
 
     Annotations: 
         rdfs:comment "The separation of dispersed particels from a gas phase by suspensing or solving the particles in a liquid phase."@en
+    
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Sedimentation>
+
+    Annotations: 
+        rdfs:comment "Sedimentation is the partial separation or concentration of suspended solid particles from a liquid by gravity settling. (Perry)"@en
     
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
