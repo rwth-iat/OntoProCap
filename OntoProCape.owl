@@ -86,6 +86,15 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Briquetting>
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
 
     
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Cementation>
+
+    Annotations: 
+        rdfs:comment "Cementation is process to recover dissolved metals from the aqueous phase. The basic principle of cementation is contact reduction. In other words, the electrons from a less noble metal are given up to a more noble dissolved metal. (Free, M. L. (2013). Hydrometallurgy: Fundamentals and Applications. Wiley.)"@en
+    
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Centrifugation>
 
     Annotations: 
@@ -488,8 +497,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Kneading>
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Leaching>
 
     Annotations: 
-        rdfs:comment "Leaching in terms of unit operation is a particular form of extraction. Usually, a solute, a insolvable carrier and a solvent are applied for solid extraction"@en,
-        rdfs:comment "Might also be used for Cementation and Precipitation processes."@en
+        rdfs:comment "Leaching in terms of unit operation is a particular form of extraction. Usually, a solute, a insolvable carrier and a solvent are applied for solid extraction"@en
     
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
@@ -595,6 +603,15 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChangeOfSolids>
 
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#PhaseChange>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Precipitation>
+
+    Annotations: 
+        rdfs:comment "Precipitation of products, impurities, or contaminants can be induced by the addition of solvents, salts, or polymers to the solution; by increasing temperature; or by adjusting the solution pH. (Perry)"@en
+    
+    SubClassOf: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#PressureChange>
