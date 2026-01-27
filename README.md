@@ -80,7 +80,7 @@ Creator: Michael Winter, Indah Radityo Putri
 E-Mail: {m.winter, i.putri}@iat.rwth-aachen.de
 
 ## Contact & Acknowledgements
-Maintainer: [Michael Winter](mailto:m.winter@iat.rwth‑aachen.de), [Indah Putri](mailto:i.putri@iat.rwth-aachen.de)
+Maintainer: [Michael Winter](mailto:m.winter@iat.rwth‑aachen.de), [Indah Radityo Putri](mailto:i.putri@iat.rwth-aachen.de)
 
 Institution: [Chair of Information and Automation Systems (IAT) - RWTH Aachen University](https://www.iat.rwth-aachen.de/) 
 Head of Institution: [Prof. Dr.-Ing. Tobias Kleinert](mailto:kleinert@iat.rwth-aachen.de)
