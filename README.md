@@ -2,8 +2,6 @@
 
 OntoProCap is an OWL ontology for formally describing **process capabilities** in modular and conventional production systems. These descriptions are machine-interpretable, independent of specific implementations and vendors. This ontology is intended to support semantic descriptions in applications for modular automation, recipe engineering, resource matching, and digital twins.
 
----
-
 ## Motivation
 
 Modern production systems increasingly rely on:
@@ -17,8 +15,6 @@ However, existing standards typically describe *interfaces* or *services*, while
 OntoProCap addresses this gap by providing:
 - Formal classification aligned with the IEC process terminology  
 - Explicit semantic descriptions for process capabilities supporting capability-based engineering, planning, and orchestration
-
----
 
 ## Conceptual Foundation
 
@@ -39,7 +35,6 @@ The ontology aligns naturally with:
 - Module Type Package (MTP)  
 - Asset Administration Shell (AAS)  
 
----
 
 ## Structure
 
@@ -60,16 +55,12 @@ OntoProCap.owl
 └─ Process 
 ```
 
----
-
 ## Examples of described capabilities
 
 - `TransformationCapability`:Capability to change the properties of a material, energy or information flow (e.g. temperature, chemical composition, position).
 - `EnthalpyChange`: EnthalpyChange in terms of unit operation considers a conversion of energy which often result in a change of the state of aggregation.
 - `TemperatureChange`: TemperatureChange in terms of unit operation means to transport the heat content of one material to another and it is applied for heating or cooling purposes.
 - `HeatingOfLiquids`: Increasing the temperature of a liquid without changing ist state of aggregation
-
----
 
 ## License
 The ontology *OntoProCap* is licensed under the Creative Commons CC BY-SA 4.0 (Attribution-ShareAlike 4.0 International) license. This means that you can freely use, distribute, edit, and build upon the ontology as long as you give proper credit to the creator of the ontology and publish your derivations under the same license.
@@ -88,15 +79,11 @@ Code artifacts (if any) are licensed separately under MIT.
 Creator: Michael Winter, Indah Radityo Putri
 E-Mail: {m.winter, i.putri}@iat.rwth-aachen.de
 
- ---
-
 ## Contact & Acknowledgements
 Maintainer: [Michael Winter](mailto:m.winter@iat.rwth‑aachen.de), [Indah Putri](mailto:i.putri@iat.rwth-aachen.de)
 
 Institution: [Chair of Information and Automation Systems (IAT) - RWTH Aachen University](https://www.iat.rwth-aachen.de/) 
 Head of Institution: [Prof. Dr.-Ing. Tobias Kleinert](mailto:kleinert@iat.rwth-aachen.de)
-
----
 
 ## References
 
