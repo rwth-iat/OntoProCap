@@ -19,13 +19,16 @@ OntoProCap addresses this gap by providing:
 ## Conceptual Foundation
 
 OntoProCap follows the IEC process definition:
-
 > **Process (IEC 60050 / IEV 351-42-33):**  
 > *complete set of interacting operations in a system by which matter, energy or information is transformed, transported or stored* [1].
 
 Capabilities are defined as:
 > **Capability:**
 > *Implementation-independent description of a function in industrial production to achieve an effect in the physical or virtual world* [2].
+
+Resources are defined as:
+> **Resource:**
+> *entity capable of performing functions specified as capabilities and potentially implemented as skills* [2]. *(compare definition of “Functional Unit”)* [3].
 
 The ontology aligns naturally with:
 
@@ -41,23 +44,25 @@ The ontology aligns naturally with:
 The Ontology *OntoProCap* structures capabilities according to the **process concept of IEC 60050 / IEV 351-42-33**:
 ```
 OntoProCap.owl
-│└─ Capability 
-│    ├── StorageCapability    
-│    ├── TransformationCapability
-|    |      ├──...
-|    |      ├──EnthalpyChange
-|    |      |   ├──...
-|    |      |   └──TemperatureChange
-|    |      |       ├──...
-|    |      |       └──...
-|    |      └──...
-│    └── TransportCapability
-└─ Process 
+|
+├── Capability 
+|   ├── Storage    
+|   ├── Transformation
+|   |      ├──...
+|   |      ├──EnthalpyChange
+|   |      |   ├──...
+|   |      |   └──TemperatureChange
+|   |      |       ├──...
+|   |      |       └──...
+|   |      └──...
+|   └── Transport
+├── Process
+└── Resource 
 ```
 
 ## Examples of described capabilities
 
-- `TransformationCapability`:Capability to change the properties of a material, energy or information flow (e.g. temperature, chemical composition, position).
+- `TransformationCapability`: Capability to change the properties of a material, energy or information flow (e.g. temperature, chemical composition, position).
 - `EnthalpyChange`: EnthalpyChange in terms of unit operation considers a conversion of energy which often result in a change of the state of aggregation.
 - `TemperatureChange`: TemperatureChange in terms of unit operation means to transport the heat content of one material to another and it is applied for heating or cooling purposes.
 - `HeatingOfLiquids`: Increasing the temperature of a liquid without changing ist state of aggregation
@@ -75,7 +80,6 @@ Under the following terms:
 
 Code artifacts (if any) are licensed separately under MIT.
 
-
 Creator: Michael Winter, Indah Radityo Putri
 E-Mail: {m.winter, i.putri}@iat.rwth-aachen.de
 
@@ -90,3 +94,5 @@ Head of Institution: [Prof. Dr.-Ing. Tobias Kleinert](mailto:kleinert@iat.rwth-a
 [1] International Electrotechnical Commission, “*IEV 351-42-33: process*,” International Electrotechnical Vocabulary (Electropedia), Oct. 2015. [Online]. Available: https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=351-42-33. [Accessed: 27-Jan-2026].
 
 [2] C. Diedrich et al., “*Information Model for Capabilities, Skills & Services: Definition of terminology and proposal for a technology-independent information model for capabilities and skills in flexible manufacturing*”, Berlin: Plattform Industrie 4.0, Oct. 2022. [Online]. Available: https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/CapabilitiesSkillsServices.pdf?__blob=publicationFile&v=1. [Accessed: 27-Jan-2026].
+
+[3] International Electrotechnical Commission, “*IEV 171-01-22: functional unit*,” International Electrotechnical Vocabulary (Electropedia), Oct. 2015. [Online]. Available: https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=171-01-22. [Accessed: 2-Apr-2026]

@@ -32,6 +32,27 @@ Datatype: rdf:PlainLiteral
 Datatype: xsd:anyURI
 
     
+Datatype: xsd:string
+
+    
+ObjectProperty: <http://css.iat.rwth-aachen.de/OntoProCap#providesCapability>
+
+    Domain: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Resource>
+    
+    Range: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
+    
+    
+ObjectProperty: <http://css.iat.rwth-aachen.de/OntoProCap#requiresCapability>
+
+    Domain: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Process>
+    
+    Range: 
+        <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
+    
+    
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Abrasion>
 
     Annotations: 
@@ -85,6 +106,12 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Briquetting>
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
 
+    Annotations: 
+        rdfs:comment "Implementation-independent description of a function in industrial production to achieve an effect in the physical or virtual world. (Capability–Skill–Service (CSS) model)",
+        rdfs:label "Capability"@en,
+        rdfs:label "Fähigkeit"@de,
+        rdfs:seeAlso "https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/CapabilitiesSkillsServices.html"
+    
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Cementation>
 
@@ -116,7 +143,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Combination>
         rdfs:comment "A combination in terms of unit operation means to get together different process steps to achieve a particular one."@en
     
     SubClassOf: 
-        <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
+        <http://css.iat.rwth-aachen.de/OntoProCap#Transformation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Compacting>
@@ -152,7 +179,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Condensation>
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Conveying>
 
     SubClassOf: 
-        <http://css.iat.rwth-aachen.de/OntoProCap#TransportCapability>
+        <http://css.iat.rwth-aachen.de/OntoProCap#Transport>
     
     DisjointWith: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Dosing>
@@ -254,7 +281,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Distillation>
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Dosing>
 
     SubClassOf: 
-        <http://css.iat.rwth-aachen.de/OntoProCap#TransportCapability>
+        <http://css.iat.rwth-aachen.de/OntoProCap#Transport>
     
     DisjointWith: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Conveying>
@@ -320,7 +347,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#EnthalpyChange>
         rdfs:comment "EnthalpyChange in terms of unit operation considers a conversion of energy which often result in a change of the state of aggregation."@en
     
     SubClassOf: 
-        <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
+        <http://css.iat.rwth-aachen.de/OntoProCap#Transformation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Extraction>
@@ -368,7 +395,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
         rdfs:comment "Fragmentation in terms of unit operation is the breakup of solid material for further processing."@en
     
     SubClassOf: 
-        <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
+        <http://css.iat.rwth-aachen.de/OntoProCap#Transformation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Fusion>
@@ -446,7 +473,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#HeatingOfSolids>
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#HoldingTemperature>
 
     SubClassOf: 
-        <http://css.iat.rwth-aachen.de/OntoProCap#StorageCapability>
+        <http://css.iat.rwth-aachen.de/OntoProCap#Storage>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Humidification>
@@ -644,10 +671,19 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#PressureChangeOfLiquid>
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Process>
 
     Annotations: 
-        rdfs:comment "351-42-33, process, <in control technology>: \"complete set of interacting operations in a system by which matter, energy or information is transformed, transported or stored\""@en,
+        rdfs:comment "351-42-33, process, <in control technology>: \"complete set of interacting operations in a system by which matter, energy or information is transformed, transported or stored\" (IEC 60050)"@en,
+        rdfs:comment "A process describes the desired behavior of a process operator, by means of a solution neutral description of inputs and outputs. Products, energies, and information are converted into new products, energies, and information by a process operator. The process operator implements this conversion with the help of technical resources. (VDI 3682)",
+        rdfs:comment "Equivalent to bfo:process.
+Process is an occurrent that has some temporal proper part and for some time, process has some material entity as participant. (Basic Formal Ontology (BFO))",
+        rdfs:comment "Equivalent to prov:Activity.
+An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities. (Provenance Ontology (PROV-O))",
+        rdfs:comment "Production-relevant activity at any level of granularity that might affect materials and is performed by resources. (Capability–Skill–Service (CSS) model)",
         rdfs:label "Process"@en,
         rdfs:label "Prozess"@de,
-        rdfs:seeAlso "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=351-42-33"^^xsd:anyURI
+        rdfs:seeAlso "https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/CapabilitiesSkillsServices.html",
+        rdfs:seeAlso "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=351-42-33"^^xsd:anyURI,
+        rdfs:seeAlso "https://github.com/bfo-ontology/BFO-2020",
+        rdfs:seeAlso "https://www.w3.org/TR/prov-o/#Activity"
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#QuenchGranulation>
@@ -666,6 +702,24 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Rectification>
     
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
+    
+    
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Resource>
+
+    Annotations: 
+        rdfs:comment "171-01-22, functional unit, <in information processing>: \"entity of hardware or software, or both, capable of accomplishing a specified purpose\"",
+        rdfs:comment "Entity capable of performing functions specified as capabilities and potentially implemented as skills. [compare definition of “Functional Unit”] (Capability–Skill–Service (CSS) model)",
+        rdfs:comment "Equivalent to bfo:continuant
+A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (Basic Formal Ontology (BFO))",
+        rdfs:comment "Equivalent to prov:Entity
+An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. (Provenance Ontology (PROV-O))",
+        rdfs:comment "The technical resource is able to implement certain processes and is an abstract description of a system. (VDI 3682-1)",
+        rdfs:label "Resource"@en,
+        rdfs:label "Ressource"@de,
+        rdfs:seeAlso "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=171-01-22",
+        rdfs:seeAlso "https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/CapabilitiesSkillsServices.html",
+        rdfs:seeAlso "https://github.com/bfo-ontology/BFO-2020",
+        rdfs:seeAlso "https://www.w3.org/TR/prov-o/#Entity"
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Scrubbing>
@@ -692,7 +746,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Separation>
         rdfs:comment "Separation in terms of unit operation means to achieve single components of a mixture by means of physical of chemical phenomenon."@en
     
     SubClassOf: 
-        <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
+        <http://css.iat.rwth-aachen.de/OntoProCap#Transformation>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Shredding>
@@ -756,7 +810,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Stirring>
         <http://css.iat.rwth-aachen.de/OntoProCap#MixingOfLiquids>
     
     
-Class: <http://css.iat.rwth-aachen.de/OntoProCap#StorageCapability>
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Storage>
 
     Annotations: 
         rdfs:comment "Capability to store materials, energy or information."@en,
@@ -769,7 +823,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#StorageCapability>
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Storing>
 
     SubClassOf: 
-        <http://css.iat.rwth-aachen.de/OntoProCap#StorageCapability>
+        <http://css.iat.rwth-aachen.de/OntoProCap#Storage>
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Sublimation>
@@ -838,7 +892,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#ThermalCrushing>
         <http://css.iat.rwth-aachen.de/OntoProCap#Fragmentation>
     
     
-Class: <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Transformation>
 
     Annotations: 
         rdfs:comment "Capability to change the properties of a material, energy or information flow (e.g. temperature, chemical composition, position)."@en,
@@ -848,7 +902,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#TransformationCapability>
         <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
     
     
-Class: <http://css.iat.rwth-aachen.de/OntoProCap#TransportCapability>
+Class: <http://css.iat.rwth-aachen.de/OntoProCap#Transport>
 
     Annotations: 
         rdfs:comment "Capability to transport substances, energy or information."@en,
