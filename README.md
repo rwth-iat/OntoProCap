@@ -1,6 +1,6 @@
 # OntoProCap – Ontology for Process Capabilities
 
-OntoProCap is an OWL ontology for formally describing **process capabilities** in modular and conventional production systems. These descriptions are machine-interpretable, independent of specific implementations and vendors. This ontology is intended to support semantic descriptions in applications for modular automation, recipe engineering, resource matching, and digital twins.
+OntoProCap is an OWL ontology for formally describing **process capabilities** in modular and conventional production systems. These descriptions are machine-interpretable, independent of specific implementations and vendors. This ontology is intended to support semantic descriptions in applications for modular automation, recipe engineering, resource matching, and digital twins in process industry.
 
 ## Motivation
 
@@ -62,7 +62,7 @@ OntoProCap.owl
 
 ## Examples of described capabilities
 
-- `TransformationCapability`: Capability to change the properties of a material, energy or information flow (e.g. temperature, chemical composition, position).
+- `Transformation`: Capability to change the properties of a material, energy or information flow (e.g. temperature, chemical composition, position).
 - `EnthalpyChange`: EnthalpyChange in terms of unit operation considers a conversion of energy which often result in a change of the state of aggregation.
 - `TemperatureChange`: TemperatureChange in terms of unit operation means to transport the heat content of one material to another and it is applied for heating or cooling purposes.
 - `HeatingOfLiquids`: Increasing the temperature of a liquid without changing ist state of aggregation

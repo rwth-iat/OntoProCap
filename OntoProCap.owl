@@ -107,7 +107,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Briquetting>
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
 
     Annotations: 
-        rdfs:comment "Implementation-independent description of a function in industrial production to achieve an effect in the physical or virtual world. (Capability–Skill–Service (CSS) model)",
+        rdfs:comment "Implementation-independent description of a function in industrial production to achieve an effect in the physical or virtual world. (Capability, Skill and Service (CSS) Model)",
         rdfs:label "Capability"@en,
         rdfs:label "Fähigkeit"@de,
         rdfs:seeAlso "https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/CapabilitiesSkillsServices.html"
@@ -672,18 +672,17 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Process>
 
     Annotations: 
         rdfs:comment "351-42-33, process, <in control technology>: \"complete set of interacting operations in a system by which matter, energy or information is transformed, transported or stored\" (IEC 60050)"@en,
-        rdfs:comment "A process describes the desired behavior of a process operator, by means of a solution neutral description of inputs and outputs. Products, energies, and information are converted into new products, energies, and information by a process operator. The process operator implements this conversion with the help of technical resources. (VDI 3682)",
         rdfs:comment "Equivalent to bfo:process.
 Process is an occurrent that has some temporal proper part and for some time, process has some material entity as participant. (Basic Formal Ontology (BFO))",
         rdfs:comment "Equivalent to prov:Activity.
 An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities. (Provenance Ontology (PROV-O))",
-        rdfs:comment "Production-relevant activity at any level of granularity that might affect materials and is performed by resources. (Capability–Skill–Service (CSS) model)",
+        rdfs:comment "Production-relevant activity at any level of granularity that might affect materials and is performed by resources. (Capability, Skill and Service (CSS) Model)",
         rdfs:label "Process"@en,
         rdfs:label "Prozess"@de,
-        rdfs:seeAlso "https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/CapabilitiesSkillsServices.html",
-        rdfs:seeAlso "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=351-42-33"^^xsd:anyURI,
         rdfs:seeAlso "https://github.com/bfo-ontology/BFO-2020",
-        rdfs:seeAlso "https://www.w3.org/TR/prov-o/#Activity"
+        rdfs:seeAlso "https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/CapabilitiesSkillsServices.html",
+        rdfs:seeAlso "https://www.w3.org/TR/prov-o/#Activity",
+        rdfs:seeAlso "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=351-42-33"^^xsd:anyURI
     
     
 Class: <http://css.iat.rwth-aachen.de/OntoProCap#QuenchGranulation>
@@ -708,17 +707,16 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Resource>
 
     Annotations: 
         rdfs:comment "171-01-22, functional unit, <in information processing>: \"entity of hardware or software, or both, capable of accomplishing a specified purpose\"",
-        rdfs:comment "Entity capable of performing functions specified as capabilities and potentially implemented as skills. [compare definition of “Functional Unit”] (Capability–Skill–Service (CSS) model)",
         rdfs:comment "Equivalent to bfo:continuant
 A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (Basic Formal Ontology (BFO))",
         rdfs:comment "Equivalent to prov:Entity
 An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. (Provenance Ontology (PROV-O))",
-        rdfs:comment "The technical resource is able to implement certain processes and is an abstract description of a system. (VDI 3682-1)",
+        rdfs:comment "Entity capable of performing functions specified as capabilities and potentially implemented as skills. [compare definition of “Functional Unit”] (Capability, Skill and Service (CSS) Model)",
         rdfs:label "Resource"@en,
         rdfs:label "Ressource"@de,
+        rdfs:seeAlso "https://github.com/bfo-ontology/BFO-2020",
         rdfs:seeAlso "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=171-01-22",
         rdfs:seeAlso "https://www.plattform-i40.de/IP/Redaktion/DE/Downloads/Publikation/CapabilitiesSkillsServices.html",
-        rdfs:seeAlso "https://github.com/bfo-ontology/BFO-2020",
         rdfs:seeAlso "https://www.w3.org/TR/prov-o/#Entity"
     
     
@@ -896,7 +894,7 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Transformation>
 
     Annotations: 
         rdfs:comment "Capability to change the properties of a material, energy or information flow (e.g. temperature, chemical composition, position)."@en,
-        rdfs:comment "Fähigkeit, Eigenschaften eines Stoff-, Energie- oder Informationsstroms zu ändern (z.B. Temperatur, chemische Zusammensetzung, Position)."@de
+        rdfs:comment "Fähigkeit, Eigenschaften eines Stoff-, Energie- oder Informationsstroms zu ändern (z. B. Temperatur, chemische Zusammensetzung, Position)."@de
     
     SubClassOf: 
         <http://css.iat.rwth-aachen.de/OntoProCap#Capability>
