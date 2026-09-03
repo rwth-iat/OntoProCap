@@ -1,4 +1,4 @@
-Prefix: : <http://www.semanticweb.org/m.winter/ontologies/2025/3/untitled-ontology-85/>
+Prefix: : <http://css.iat.rwth-aachen.de/OntoProCap>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -672,11 +672,11 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Process>
 
     Annotations: 
         rdfs:comment "351-42-33, process, <in control technology>: \"complete set of interacting operations in a system by which matter, energy or information is transformed, transported or stored\" (IEC 60050)"@en,
-        rdfs:comment "Equivalent to bfo:process.
-Process is an occurrent that has some temporal proper part and for some time, process has some material entity as participant. (Basic Formal Ontology (BFO))",
-        rdfs:comment "Equivalent to prov:Activity.
-An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities. (Provenance Ontology (PROV-O))",
         rdfs:comment "Production-relevant activity at any level of granularity that might affect materials and is performed by resources. (Capability, Skill and Service (CSS) Model)",
+        rdfs:comment "Aligned with bfo:process.
+Process is an occurrent that has some temporal proper part and for some time, process has some material entity as participant. (Basic Formal Ontology (BFO))",
+        rdfs:comment "Aligned with prov:Activity.
+An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities. (Provenance Ontology (PROV-O))",
         rdfs:label "Process"@en,
         rdfs:label "Prozess"@de,
         rdfs:seeAlso "https://github.com/bfo-ontology/BFO-2020",
@@ -707,11 +707,11 @@ Class: <http://css.iat.rwth-aachen.de/OntoProCap#Resource>
 
     Annotations: 
         rdfs:comment "171-01-22, functional unit, <in information processing>: \"entity of hardware or software, or both, capable of accomplishing a specified purpose\"",
-        rdfs:comment "Equivalent to bfo:continuant
-A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (Basic Formal Ontology (BFO))",
-        rdfs:comment "Equivalent to prov:Entity
-An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. (Provenance Ontology (PROV-O))",
         rdfs:comment "Entity capable of performing functions specified as capabilities and potentially implemented as skills. [compare definition of “Functional Unit”] (Capability, Skill and Service (CSS) Model)",
+        rdfs:comment "Aligned with bfo:independent continuant
+b is an independent continuant =Def b is a continuant & there is no c such that b specifically depends on c or b generically depends on c. (Basic Formal Ontology (BFO))",
+        rdfs:comment "Aligned with prov:Entity
+An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. (Provenance Ontology (PROV-O))",
         rdfs:label "Resource"@en,
         rdfs:label "Ressource"@de,
         rdfs:seeAlso "https://github.com/bfo-ontology/BFO-2020",
