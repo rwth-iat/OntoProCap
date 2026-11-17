@@ -1,0 +1,1023 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://css.iat.rwth-aachen.de/OntoProCap-CPT"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://css.iat.rwth-aachen.de/OntoProCap-CPT"
+     versionIRI="http://css.iat.rwth-aachen.de/OntoProCap-CPT/0.0.1">
+    <Prefix name="" IRI="http://css.iat.rwth-aachen.de/OntoProCap-CPT#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="OntoProCap" IRI="http://css.iat.rwth-aachen.de/OntoProCap#"/>
+    <Import>http://css.iat.rwth-aachen.de/OntoProCap/0.0.1</Import>
+    <Declaration>
+        <Class IRI="#Actuator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Apparatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FEA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlowMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlowSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LevelMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LevelSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Machine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasuringCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModularPlant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PEA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalFlowMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalFlowSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalLevelMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalLevelSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalTemperatureMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalTemperatureSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalVirtualpHMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalpHSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PipeFitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PipeSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Piping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PipingNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessCapability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pump"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stirrer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tank"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperatureMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperatureSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Valve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualFlowMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualFlowSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualLevelMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualLevelSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualTemperatureMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualTemperatureSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualpHMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VirtualpHSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pHMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pHSensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActuator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCapability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubSystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVirtualSensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DosingCap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlowMeasuringCap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HC10_Capabilities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HC10_PEA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HC20_Capabilities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HC20_PEA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HC30_Capabilities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HC30_PEA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HC40_Capabilities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HC40_PEA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HeaterActuator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HeatingOfLiquidsCap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LeachingCap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LevelMeasuringCap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhysicalFlowSensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhysicalLevelSensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhysicalTemperatureSensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhysicalpHSensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PumpActuator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StirrerActuator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StirringCap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TemperatureMeasuringCap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ValveActuator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VirtualFlowSensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VirtualLevelSensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VirtualTemperatureSensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VirtualpHSensor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pHMeasuringCap"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="OntoProCap:Leaching"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class abbreviatedIRI="OntoProCap:Dosing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class abbreviatedIRI="OntoProCap:HeatingOfLiquids"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class abbreviatedIRI="OntoProCap:Stirring"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class IRI="#TemperatureMeasuring"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class IRI="#pHMeasuring"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Actuator"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apparatus"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Component"/>
+        <Class abbreviatedIRI="OntoProCap:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Equipment"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FEA"/>
+        <Class abbreviatedIRI="OntoProCap:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowMeasuring"/>
+        <Class IRI="#MeasuringCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlowSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heater"/>
+        <Class IRI="#Actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instrument"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LevelMeasuring"/>
+        <Class IRI="#MeasuringCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LevelSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <Class IRI="#Equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasuringCapability"/>
+        <Class abbreviatedIRI="OntoProCap:Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModularPlant"/>
+        <Class abbreviatedIRI="OntoProCap:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PEA"/>
+        <Class abbreviatedIRI="OntoProCap:Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalFlowMeasuring"/>
+        <Class IRI="#FlowMeasuring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalFlowSensor"/>
+        <Class IRI="#FlowSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalLevelMeasuring"/>
+        <Class IRI="#LevelMeasuring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalLevelSensor"/>
+        <Class IRI="#LevelSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalTemperatureMeasuring"/>
+        <Class IRI="#TemperatureMeasuring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalTemperatureSensor"/>
+        <Class IRI="#TemperatureSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalVirtualpHMeasuring"/>
+        <Class IRI="#pHMeasuring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalpHSensor"/>
+        <Class IRI="#pHSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pipe"/>
+        <Class IRI="#Piping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PipeFitting"/>
+        <Class IRI="#Piping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PipeSegment"/>
+        <Class IRI="#Piping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piping"/>
+        <Class IRI="#Component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PipingNetwork"/>
+        <Class IRI="#Piping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessCapability"/>
+        <Class abbreviatedIRI="OntoProCap:Capability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pump"/>
+        <Class IRI="#Actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensor"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stirrer"/>
+        <Class IRI="#Actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tank"/>
+        <Class IRI="#Apparatus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureMeasuring"/>
+        <Class IRI="#MeasuringCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Valve"/>
+        <Class IRI="#Actuator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualFlowMeasuring"/>
+        <Class IRI="#FlowMeasuring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualFlowSensor"/>
+        <Class IRI="#FlowSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualLevelMeasuring"/>
+        <Class IRI="#LevelMeasuring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualLevelSensor"/>
+        <Class IRI="#LevelSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualTemperatureMeasuring"/>
+        <Class IRI="#TemperatureMeasuring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualTemperatureSensor"/>
+        <Class IRI="#TemperatureSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualpHMeasuring"/>
+        <Class IRI="#pHMeasuring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VirtualpHSensor"/>
+        <Class IRI="#pHSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pHMeasuring"/>
+        <Class IRI="#MeasuringCapability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pHSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class abbreviatedIRI="OntoProCap:Dosing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class abbreviatedIRI="OntoProCap:HeatingOfLiquids"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class abbreviatedIRI="OntoProCap:Stirring"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class IRI="#FlowMeasuring"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class IRI="#TemperatureMeasuring"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class IRI="#pHMeasuring"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Class abbreviatedIRI="OntoProCap:Leaching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class IRI="#PhysicalFlowMeasuring"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#associatedWithCapability"/>
+                <Class IRI="#PhysicalTemperatureMeasuring"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasVirtualSensor"/>
+            <NamedIndividual IRI="#VirtualpHSensor"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OntoProCap:Dosing"/>
+        <NamedIndividual IRI="#DosingCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FlowMeasuring"/>
+        <NamedIndividual IRI="#FlowMeasuringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalFlowMeasuring"/>
+        <NamedIndividual IRI="#FlowMeasuringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VirtualFlowMeasuring"/>
+        <NamedIndividual IRI="#FlowMeasuringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PEA"/>
+        <NamedIndividual IRI="#HC10_Capabilities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PEA"/>
+        <NamedIndividual IRI="#HC10_PEA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PEA"/>
+        <NamedIndividual IRI="#HC20_Capabilities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PEA"/>
+        <NamedIndividual IRI="#HC20_PEA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PEA"/>
+        <NamedIndividual IRI="#HC30_Capabilities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PEA"/>
+        <NamedIndividual IRI="#HC30_PEA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PEA"/>
+        <NamedIndividual IRI="#HC40_Capabilities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PEA"/>
+        <NamedIndividual IRI="#HC40_PEA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Heater"/>
+        <NamedIndividual IRI="#HeaterActuator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OntoProCap:HeatingOfLiquids"/>
+        <NamedIndividual IRI="#HeatingOfLiquidsCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OntoProCap:Leaching"/>
+        <NamedIndividual IRI="#LeachingCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LevelMeasuring"/>
+        <NamedIndividual IRI="#LevelMeasuringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalLevelMeasuring"/>
+        <NamedIndividual IRI="#LevelMeasuringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VirtualLevelMeasuring"/>
+        <NamedIndividual IRI="#LevelMeasuringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalFlowSensor"/>
+        <NamedIndividual IRI="#PhysicalFlowSensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalLevelSensor"/>
+        <NamedIndividual IRI="#PhysicalLevelSensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalTemperatureSensor"/>
+        <NamedIndividual IRI="#PhysicalTemperatureSensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalpHSensor"/>
+        <NamedIndividual IRI="#PhysicalpHSensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pump"/>
+        <NamedIndividual IRI="#PumpActuator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stirrer"/>
+        <NamedIndividual IRI="#StirrerActuator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="OntoProCap:Stirring"/>
+        <NamedIndividual IRI="#StirringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalTemperatureMeasuring"/>
+        <NamedIndividual IRI="#TemperatureMeasuringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TemperatureMeasuring"/>
+        <NamedIndividual IRI="#TemperatureMeasuringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VirtualTemperatureMeasuring"/>
+        <NamedIndividual IRI="#TemperatureMeasuringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Valve"/>
+        <NamedIndividual IRI="#ValveActuator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VirtualFlowSensor"/>
+        <NamedIndividual IRI="#VirtualFlowSensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VirtualLevelSensor"/>
+        <NamedIndividual IRI="#VirtualLevelSensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VirtualTemperatureSensor"/>
+        <NamedIndividual IRI="#VirtualTemperatureSensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VirtualpHSensor"/>
+        <NamedIndividual IRI="#VirtualpHSensor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PhysicalVirtualpHMeasuring"/>
+        <NamedIndividual IRI="#pHMeasuringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VirtualpHMeasuring"/>
+        <NamedIndividual IRI="#pHMeasuringCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#pHMeasuring"/>
+        <NamedIndividual IRI="#pHMeasuringCap"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC10_Capabilities"/>
+        <NamedIndividual IRI="#DosingCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC10_Capabilities"/>
+        <NamedIndividual IRI="#FlowMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC10_Capabilities"/>
+        <NamedIndividual IRI="#HeatingOfLiquidsCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC10_Capabilities"/>
+        <NamedIndividual IRI="#LevelMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC10_Capabilities"/>
+        <NamedIndividual IRI="#StirringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC10_Capabilities"/>
+        <NamedIndividual IRI="#TemperatureMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActuator"/>
+        <NamedIndividual IRI="#HC10_PEA"/>
+        <NamedIndividual IRI="#HeaterActuator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActuator"/>
+        <NamedIndividual IRI="#HC10_PEA"/>
+        <NamedIndividual IRI="#PumpActuator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActuator"/>
+        <NamedIndividual IRI="#HC10_PEA"/>
+        <NamedIndividual IRI="#StirrerActuator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#HC10_PEA"/>
+        <NamedIndividual IRI="#PhysicalFlowSensor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#HC10_PEA"/>
+        <NamedIndividual IRI="#PhysicalLevelSensor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#HC10_PEA"/>
+        <NamedIndividual IRI="#PhysicalTemperatureSensor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC20_Capabilities"/>
+        <NamedIndividual IRI="#DosingCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC20_Capabilities"/>
+        <NamedIndividual IRI="#FlowMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC20_Capabilities"/>
+        <NamedIndividual IRI="#LevelMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC20_Capabilities"/>
+        <NamedIndividual IRI="#StirringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActuator"/>
+        <NamedIndividual IRI="#HC20_PEA"/>
+        <NamedIndividual IRI="#PumpActuator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActuator"/>
+        <NamedIndividual IRI="#HC20_PEA"/>
+        <NamedIndividual IRI="#StirrerActuator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#HC20_PEA"/>
+        <NamedIndividual IRI="#PhysicalFlowSensor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#HC20_PEA"/>
+        <NamedIndividual IRI="#PhysicalLevelSensor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC30_Capabilities"/>
+        <NamedIndividual IRI="#DosingCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC30_Capabilities"/>
+        <NamedIndividual IRI="#FlowMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC30_Capabilities"/>
+        <NamedIndividual IRI="#LevelMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC30_Capabilities"/>
+        <NamedIndividual IRI="#StirringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC30_Capabilities"/>
+        <NamedIndividual IRI="#TemperatureMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActuator"/>
+        <NamedIndividual IRI="#HC30_PEA"/>
+        <NamedIndividual IRI="#PumpActuator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActuator"/>
+        <NamedIndividual IRI="#HC30_PEA"/>
+        <NamedIndividual IRI="#StirrerActuator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#HC30_PEA"/>
+        <NamedIndividual IRI="#PhysicalFlowSensor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#HC30_PEA"/>
+        <NamedIndividual IRI="#PhysicalLevelSensor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#HC30_PEA"/>
+        <NamedIndividual IRI="#PhysicalTemperatureSensor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC40_Capabilities"/>
+        <NamedIndividual IRI="#DosingCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC40_Capabilities"/>
+        <NamedIndividual IRI="#FlowMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <NamedIndividual IRI="#HC40_Capabilities"/>
+        <NamedIndividual IRI="#LevelMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActuator"/>
+        <NamedIndividual IRI="#HC40_PEA"/>
+        <NamedIndividual IRI="#PumpActuator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#HC40_PEA"/>
+        <NamedIndividual IRI="#PhysicalFlowSensor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSensor"/>
+        <NamedIndividual IRI="#HC40_PEA"/>
+        <NamedIndividual IRI="#PhysicalLevelSensor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#HeaterActuator"/>
+        <NamedIndividual IRI="#HeatingOfLiquidsCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#PhysicalFlowSensor"/>
+        <NamedIndividual IRI="#FlowMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#PhysicalLevelSensor"/>
+        <NamedIndividual IRI="#LevelMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#PhysicalTemperatureSensor"/>
+        <NamedIndividual IRI="#TemperatureMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#PhysicalpHSensor"/>
+        <NamedIndividual IRI="#pHMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#PumpActuator"/>
+        <NamedIndividual IRI="#DosingCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#StirrerActuator"/>
+        <NamedIndividual IRI="#StirringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#ValveActuator"/>
+        <NamedIndividual IRI="#DosingCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#VirtualFlowSensor"/>
+        <NamedIndividual IRI="#FlowMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#VirtualLevelSensor"/>
+        <NamedIndividual IRI="#LevelMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#VirtualTemperatureSensor"/>
+        <NamedIndividual IRI="#TemperatureMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCapability"/>
+        <NamedIndividual IRI="#VirtualpHSensor"/>
+        <NamedIndividual IRI="#pHMeasuringCap"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasActuator"/>
+        <ObjectProperty IRI="#hasSubSystem"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSensor"/>
+        <ObjectProperty IRI="#hasSubSystem"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasVirtualSensor"/>
+        <ObjectProperty IRI="#hasSubSystem"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <Class abbreviatedIRI="OntoProCap:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActuator"/>
+        <Class IRI="#PEA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCapability"/>
+        <Class abbreviatedIRI="OntoProCap:Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSensor"/>
+        <Class IRI="#PEA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubSystem"/>
+        <Class IRI="#PEA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVirtualSensor"/>
+        <Class IRI="#PEA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+        <Class abbreviatedIRI="OntoProCap:Capability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActuator"/>
+        <Class IRI="#Actuator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCapability"/>
+        <Class abbreviatedIRI="OntoProCap:Capability"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSensor"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubSystem"/>
+        <Class IRI="#Component"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVirtualSensor"/>
+        <Class IRI="#Sensor"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasSubSystem"/>
+            <ObjectProperty IRI="#hasCapability"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#associatedWithCapability"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Apparatus</IRI>
+        <Literal xml:lang="en">An Apparatus is a PieceOfEquipment which mainly consists of non-moving parts and provides space for materials to be processed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Equipment</IRI>
+        <Literal xml:lang="en">Equipment is a PlantIitem that is capable of independently realizing one or more Process Steps.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Instrument</IRI>
+        <Literal xml:lang="en">Instrumentation is about measuring and control. Instrumentation may comprise instruments as well as loops.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Machine</IRI>
+        <Literal xml:lang="en">A Machine is any mechanical or electrical device that transmits or modifies energy to perform or assist in the desired performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pipe</IRI>
+        <Literal xml:lang="en">A Pipe can be used to connect one PlantItem to another PlantItem or to the environment of a Plant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PipeFitting</IRI>
+        <Literal xml:lang="en">Fittings are used in PipingNetworks to connect straight Pipe sections, to adapt to different sizes or shapes or forking of Piping.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PipeSegment</IRI>
+        <Literal xml:lang="en">A PipeSegment is the elementary part of Piping. A Pipe is assembled of a number of PipeSegments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Piping</IRI>
+        <Literal xml:lang="en">A Piping is a plant item which is used for fluid transport. It may connect Equipment or/and Instruments.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PipingNetwork</IRI>
+        <Literal xml:lang="en">A PipingNetwork is an agglomeration of Pipes and PipeFittings used to connect multiple PiecesOfEquipment.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
